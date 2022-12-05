@@ -42,12 +42,10 @@ class Car:
     def door(self):
         print('Открывать дверь')
 
-
 class Jeep(Car):
     def __init__(self, motor, wheels, windows, awd):
         super().__init__(motor, wheels, windows)
         self.awd = awd
-
 
 class Pickup(Jeep):
     def __init__(self, motor, wheels, windows, awd, trailer, ):
@@ -57,7 +55,6 @@ class Pickup(Jeep):
     def ride_mountain(self):
         print('Ездить по горам')
 
-
 class Cargo(Car):
     def __init__(self, motor, wheels, windows, trailer):
         super().__init__(motor, wheels, windows)
@@ -66,11 +63,11 @@ class Cargo(Car):
     def carry_cargo(self):
         print('Возить груз')
 
-
 class Kamaz(Cargo):
     def haul_lift(self):
         print('Возить поднять')
 
+car1 = Kamaz(Kamaz.haul_lift())
 
 #
 # class House():
@@ -89,18 +86,18 @@ class Kamaz(Cargo):
 #         """Возраст дома"""
 #         self.age -= year
 #
-# # house1 = House('Сейфуллина', 15)
-# # House2 = House('Сейфуллина', 20)
-# # house1.age_of_house(2022)
-# # print(house1.age)
-# # print(house1.build())
+# house1 = House('Сейфуллина', 15)
+# House2 = House('Сейфуллина', 20)
+# house1.age_of_house(2022)
+# print(house1.age)
+# print(house1.build())
 #
-class Prospekt(House):
-    """дома на проспекте"""
-
-    def __init__(self, prospekt, number):
-        super().__init__(self, number)
-        self.prospekt = prospekt
+# class Prospekt(House):
+#     """дома на проспекте"""
+#
+#     def __init__(self, prospekt, number):
+#         super().__init__(self, number)
+#         self.prospekt = prospekt
 #
 # PrHouse = Prospekt('Абай', 5)
 # print(PrHouse.prospekt, PrHouse.number)
